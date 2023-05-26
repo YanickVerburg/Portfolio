@@ -26,7 +26,7 @@ export default function Footer() {
         </a>
         <span>&nbsp;and</span>
         <a
-          href="https://leonvdw.nl/"
+          href="https://yanickverburg.nl/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-baseline"
