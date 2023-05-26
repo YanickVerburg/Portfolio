@@ -19,7 +19,7 @@ export function Linkedin() {
   return (
     <Link
       className="relative flex items-center justify-center overflow-hidden rounded-[2rem] bg-bp sm:order-10"
-      href="https://www.linkedin.com/in/leonvandewardt/"
+      href="https://www.linkedin.com/in/yanick-verburg-9b0aa9221/"
       target={"_blank"}
       rel="noreferrer"
       title="Linkedin"
@@ -46,7 +46,7 @@ export function Mail() {
   return (
     <Link
       className="relative flex items-center justify-center overflow-hidden rounded-[2rem] bg-rb sm:order-12"
-      href="mailto:contact@leonvandewardt.nl"
+      href="mailto:contact@yanickverburg.nl"
       target={"_blank"}
       rel="noreferrer"
       title="Mail"

@@ -27,7 +27,7 @@ export default function About() {
           <div className="mb-[-2px] flex items-baseline gap-1">
             <p className="text-lg">I&apos;m</p>
             <div className="flex items-baseline">
-              <p className="text-3xl font-bold text-primary">Leon</p>
+              <p className="text-3xl font-bold text-primary">Yanick</p>
               <p>, a software developer from the Netherlands.</p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function About() {
           <div className="mb-[-3px] flex items-baseline gap-2">
             <p className="text-lg">I&apos;m</p>
             <div className="flex items-baseline">
-              <p className="text-3xl font-bold text-primary">Leon</p>
+              <p className="text-3xl font-bold text-primary">Yanick</p>
               <p>,</p>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function About() {
           <div className="mb-[-2px] flex items-baseline gap-1">
             <span>
               <span className="text-lg">I&apos;m </span>
-              <span className="text-3xl font-bold text-primary">Leon</span>
+              <span className="text-3xl font-bold text-primary">Yanick</span>
               <span>
                 , a software developer from the Netherlands. I am currently
                 studying IT at the University of Applied Sciences in Utrecht.
@@ -108,7 +108,7 @@ export default function About() {
           <div className="mb-[-2px] flex items-baseline gap-1">
             <span>
               <span className="text-lg">I&apos;m </span>
-              <span className="text-3xl font-bold text-primary">Leon</span>
+              <span className="text-3xl font-bold text-primary">Yanick</span>
               <span>
                 , a software developer from the Netherlands. I am currently
                 studying IT at the University of Applied Sciences in Utrecht.

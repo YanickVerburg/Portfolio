@@ -4,7 +4,7 @@ import { type ElementCompact, xml2js } from "xml-js";
 
 export default async function GithubStats() {
   const res = await fetch(
-    "https://cors-proxy.lvdw.workers.dev/?https://streak-stats.demolab.com/?user=Lvdwardt",
+    "https://cors-proxy.lvdw.workers.dev/?https://streak-stats.demolab.com/?user=yanickverburg",
     {
       next: {
         revalidate: 86400,

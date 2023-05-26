@@ -14,10 +14,10 @@ import Skills from "@/components/gridcomponents/skills";
 import Flyn from "@/components/gridcomponents/flynImg";
 import Footer from "@/components/footer";
 import GithubStats from "@/components/gridcomponents/stats/ghStats";
-import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
+// import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
 import AnimatedLayout from "@/layouts/animatedLayout";
 import { type Metadata } from "next";
-import { Maps } from "@/components/gridcomponents/maps/maps";
+// import { Maps } from "@/components/gridcomponents/maps/maps";
 // import Mapbox from "@/components/gridcomponents/mapbox2";
 import { Suspense } from "react";
 import { SiGooglemaps } from "react-icons/si";
@@ -25,7 +25,7 @@ import { SiGooglemaps } from "react-icons/si";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Welcome to Leonvdw.nl!",
+  description: "Welcome to yanickverburg.nl!",
 };
 
 // loading component
@@ -40,11 +40,8 @@ export default async function Home() {
   return (
     <AnimatedLayout>
       <Head>
-        <title>Leon van de Wardt</title>
-        <meta
-          name="description"
-          content="Leon van de Wardt's portfolio website"
-        />
+        <title>Yanick Verburg</title>
+        <meta name="description" content="Yanick Verburg's portfolio website" />
       </Head>
       <div className="min-h-screen overflow-visible transition-all duration-300 ease-in ">
         <div className=" mx-auto grid w-full max-w-[320px] grid-cols-1 gap-5 px-4 pb-6 pt-4 [grid-auto-columns:265px] [grid-auto-rows:265px] sm:max-w-[640px] sm:grid-cols-2 xl:max-w-[1200px] xl:grid-cols-4 xl:grid-rows-[265px,265px,265px,265px] xl:px-0 ">
@@ -52,10 +49,7 @@ export default async function Home() {
             <About />
           </div>
           <div className=" overflow-hidden rounded-[2rem] bg-card  sm:order-6 xl:order-2">
-            <Suspense fallback={<MapsLoading />}>
-              {/* @ts-expect-error */}
-              <Maps />
-            </Suspense>
+            <Suspense fallback={<MapsLoading />}>{/* <Maps /> */}</Suspense>
           </div>
           <div className="rounded-[2rem] bg-br sm:hidden xl:order-3">
             <Janskapsalonsmall />
@@ -88,8 +82,7 @@ export default async function Home() {
 
           <Mail />
           <div className="hidden overflow-hidden rounded-[2rem] bg-br  sm:block xl:order-12">
-            {/* @ts-expect-error */}
-            <WakatimeStats />
+            {/* <WakatimeStats /> */}
           </div>
         </div>
         <Footer />
