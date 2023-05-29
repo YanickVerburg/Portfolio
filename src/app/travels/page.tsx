@@ -36,7 +36,7 @@ export default function Travels() {
                 <div className="flex h-full flex-col justify-between">
                   <div className="">
                     <div className="flex h-6 items-center gap-2">
-                      <span className="text-2xl font-bold">18</span>
+                      <span className="text-2xl font-bold">17</span>
                     </div>
                     <span className="font-silka text-sm text-gray-400">
                       countries visited
@@ -44,7 +44,7 @@ export default function Travels() {
                   </div>
                   <div className="">
                     <div className="flex h-6 items-center gap-2">
-                      <span className="text-2xl font-bold">12</span>
+                      <span className="text-2xl font-bold">10</span>
                     </div>
                     <span className="font-silka text-sm text-gray-400">
                       capitals explored
@@ -52,7 +52,7 @@ export default function Travels() {
                   </div>
                   <div className="">
                     <div className="flex h-6 items-center gap-2">
-                      <span className="text-2xl font-bold">25</span>
+                      <span className="text-2xl font-bold">7</span>
                     </div>
                     <span className="font-silka text-sm text-gray-400">
                       airports conquered
