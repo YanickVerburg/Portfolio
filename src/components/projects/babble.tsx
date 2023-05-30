@@ -18,7 +18,7 @@ export default function Babble() {
             <Link
               href="/projects/babble"
               passHref
-              title="go to the babble project page"
+              title="go to the Babble project page"
               className="flex items-center gap-2"
             >
               <h1 className="translate-x-[-10px] opacity-0 transition-all delay-200 duration-300 group-hover:translate-x-0 group-hover:opacity-100">

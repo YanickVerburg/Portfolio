@@ -7,6 +7,7 @@ import Janskapsalonsmall from "@/components/gridcomponents/janskapsalonsmall";
 import PortfolioSmall from "@/components/projects/portfolioSmall";
 import { type Metadata } from "next";
 import Babble from "@/components/projects/babble";
+import Capgemini from "@/components/projects/capgemini";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -39,6 +40,12 @@ export default function Projects() {
             </div>
             <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br">
               <Babble />
+            </div>
+            <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br">
+              <Capgemini />
+            </div>
+            <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br sm:col-span-3 sm:block">
+              <div />
             </div>
           </div>
         </div>

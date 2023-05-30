@@ -20,7 +20,7 @@ export default function AboutPage() {
         "Hiperr is company that aims to improve the interaction between streamers and their viewers. I'm working on the frontend of a web application that provides minigames for streamers to play with their chat. The application is being build with react and typescript.",
       image: "/images/companies/babble.webp",
       link: "https://hiperr.net",
-      dates: "sep 2022 - present",
+      dates: "jan 2023 - present",
     },
     // {
     //   name: "Flyn",
@@ -33,15 +33,26 @@ export default function AboutPage() {
     //   dates: "oct 2021 - jun 2022",
     // },
     {
-      name: "Uw Computerstudent",
-      small: "UCS",
+      name: "Capgemini",
+      small: "Capgemini",
+      role: "Game Developer",
+      hours: "internship",
+      description:
+        "Capgemini is a global consulting and technology services company that helps organizations with digital transformation and innovation in over 50 countries. They provide a wide range of services, including consulting, technology solutions, and software development. During my internship there, I developed a Virtual Reality Escape Room game that emphasizes accessibility and Sustainable Development Goals.",
+      image: "/images/companies/cap.webp",
+      link: "https://www.capgemini.com/nl-nl/",
+      dates: "sep 2022 - jan 2023",
+    },
+    {
+      name: "Student aan Huis",
+      small: "SAH",
       role: "Technical Support",
       hours: "part-time",
       description:
-        "Uw Computerstudent is a company that provides IT support for elderly people. I'm working at the helpdesk, helping people with their computer problems.",
-      image: "/images/companies/ucs.webp",
-      link: "https://uwcomputerstudent.nl",
-      dates: "jul 2021 - present",
+        "Student aan Huis is a company that provides IT support at location or online. I'm helping people with all of their IT problems.",
+      image: "/images/companies/sah.webp",
+      link: "https://www.studentaanhuis.nl/",
+      dates: "aug 2022 - present",
     },
   ];
   return (

@@ -23,10 +23,10 @@ export default function Navbar() {
   //remove negative sign
 
   return (
-    <div className="grid py-4 pt-12 font-medium xl:grid-cols-3">
-      <div className="flex w-full  justify-center xl:block xl:pl-8">
+    <div className="grid py-4 pt-12 font-medium md:pt-20 xl:grid-cols-3 xl:pt-12">
+      <div className="flex w-full justify-center xl:block xl:pl-8">
         <Link href="/" className="w-36 p-4" title="back to home">
-          <p className="absolute top-[3rem] bg-gradient-to-r from-primary to-logo bg-clip-text text-4xl font-bold text-transparent">
+          <p className="absolute top-[1.8rem] bg-gradient-to-r from-primary to-logo bg-clip-text text-4xl font-bold text-transparent md:top-[3rem]">
             yan
           </p>
         </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
         href="mailto:contact@yanickverburg.nl"
         target="_blank"
         rel="noreffer"
-        className="absolute right-4 top-[3.8rem] text-sm text-gray-400 underline sm:right-14 sm:top-[7.25rem] xl:right-14 xl:top-[3.6rem]"
+        className="absolute right-4 top-[2.8rem] text-sm text-gray-400 underline sm:right-14 sm:top-[7.25rem] md:top-[3.8rem] xl:right-14 xl:top-[3.6rem]"
       >
         contact
       </a>

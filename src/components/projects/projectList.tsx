@@ -3,7 +3,7 @@ import {
   SiGoogleplay,
   SiReact,
   SiExpo,
-  SiGooglemybusiness,
+  SiAdobexd,
   SiNextdotjs,
   SiTailwindcss,
   SiFramer,
@@ -13,6 +13,9 @@ import {
   SiCloudflare,
   SiDigitalocean,
 } from "react-icons/si";
+import { DiUnitySmall, DiScrum } from "react-icons/di";
+import { TbBrandCSharp } from "react-icons/tb";
+import { MdAnimation } from "react-icons/md";
 import { ProjectList } from "@/types";
 
 const projectList: ProjectList[] = [
@@ -32,25 +35,23 @@ const projectList: ProjectList[] = [
     workedOn: [
       { work: "I made the design for the website" },
       { work: "I realised the design with React and Tailwind" },
-      { work: "I made the website public and put the company on Google Maps" },
     ],
     newSkills: [
       { skill: "Building a website with React" },
       { skill: "Styling a website with Tailwind CSS" },
-      { skill: "Publishing a website with Docker and Nginx Proxy Manager" },
-      { skill: "Putting a company on Google Maps" },
+      { skill: "How to work agile in a scrum team" },
       {
-        skill: "Using the Google Places API to fetch reviews and company info",
+        skill: "Working with AdobeXD and creating webdesigns",
       },
     ],
     icons: [
-      { icon: <SiDocker />, url: "https://www.docker.com/" },
       { icon: <SiReact />, url: "https://react.dev/" },
       { icon: <SiTailwindcss />, url: "https://tailwindcss.com/" },
       {
-        icon: <SiGooglemybusiness />,
-        url: "https://www.google.com/business/",
+        icon: <SiAdobexd />,
+        url: "https://helpx.adobe.com/xd/get-started.html",
       },
+      { icon: <DiScrum />, url: "https://www.scrum.org/" },
     ],
   },
   {
@@ -69,17 +70,22 @@ const projectList: ProjectList[] = [
     workedOn: [
       { work: "I made the design for the app" },
       { work: "I helped realising the design in React Native" },
-      { work: "I published the app on the Play Store" },
-      { work: "I drafted the Terms of Service" },
       {
-        work: "I pitched the idea to big companies for possible collaborations",
+        work: "I created the business cases, persona's, product vision board and I worked on the SDG's",
+      },
+      { work: "I drafted the Privacy Policy" },
+      {
+        work: "I helped pitch the idea to big companies for possible collaborations",
       },
     ],
     newSkills: [
       { skill: "Building an application with React Native" },
       { skill: "Styling an application with React Native Paper" },
-      { skill: "What it takes to publish an app on the Play Store" },
-      { skill: "The drafting of a Terms of Service" },
+      {
+        skill:
+          "Certain business aspects like business cases, persona's & product vision",
+      },
+      { skill: "The drafting of a Privacy Policy" },
     ],
     icons: [
       { icon: <SiReact />, url: "https://react.dev/" },
@@ -88,7 +94,6 @@ const projectList: ProjectList[] = [
         url: "https://play.google.com/console/about/",
       },
       { icon: <SiExpo />, url: "https://expo.dev/" },
-      { icon: <SiDocker />, url: "https://docker.com" },
     ],
   },
 
@@ -158,6 +163,43 @@ const projectList: ProjectList[] = [
       { icon: <SiTurborepo />, url: "https://turbo.build/repo" },
       { icon: <SiStorybook />, url: "https://storybook.js.org/" },
       { icon: <SiFirebase />, url: "https://firebase.google.com/" },
+    ],
+  },
+  {
+    id: "capgemini",
+    title: "Capgemini",
+    coverImage: "/images/companies/cap.webp",
+    projectImage: "/images/companies/cap.webp",
+    projectImageLight: "/images/companies/cap.webp",
+    url: "https://www.youtube.com/watch?v=OnScnacuOww",
+    translate: "translate-y-0 ",
+    width: "w-[120px]",
+    grid: "col-span-2 row-span-1",
+    order: "order-2",
+    description:
+      "Capgemini is a global consulting and technology services company that helps organizations with digital transformation and innovation in over 50 countries. They provide a wide range of services, including consulting, technology solutions, and software development. During my internship here I developed a Virtual Reality Escape Room focusing mainly on thinking out of the box, accessibility and the Sustainable Development Goals. I also took on the role of scrum master of a team of 6 developers.",
+    workedOn: [
+      { work: "I designed a puzzle game" },
+      { work: "I developed a puzzle game in Unity" },
+      { work: "I realised VR interaction" },
+      { work: "I applied AI, locomotion and animations" },
+    ],
+    newSkills: [
+      { skill: "Working with C# & Unity" },
+      { skill: "Working with Unity & XR Interaction Toolkit" },
+      { skill: "Learned working as a Scrum master" },
+    ],
+    icons: [
+      { icon: <DiUnitySmall />, url: "https://unity.com/" },
+      {
+        icon: <TbBrandCSharp />,
+        url: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+      },
+      { icon: <DiScrum />, url: "https://www.scrum.org/" },
+      {
+        icon: <MdAnimation />,
+        url: "https://docs.unity3d.com/Manual/AnimationSection.html",
+      },
     ],
   },
 ];
