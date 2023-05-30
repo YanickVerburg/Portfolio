@@ -3,11 +3,8 @@ import { SiWakatime } from "react-icons/si";
 export default async function WakatimeStats() {
   const wakatimeKey = process.env.WAKATIME_KEY;
 
-  const date = new Date();
-  const formattedDate = date.toISOString().slice(0, 10);
-
   const { workingOn, minutesDifference } = await fetch(
-    `https://wakatime.com/api/v1/users/current/heartbeats?date=${formattedDate}&api_key=${wakatimeKey}`,
+    `https://wakatime.com/api/v1/users/current/heartbeats?date=Today&api_key=${wakatimeKey}`,
     {
       next: {
         revalidate: 600,
