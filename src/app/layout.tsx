@@ -8,8 +8,8 @@ import Navbar from "../components/navbar";
 import Providers from "@/utils/providers";
 
 export const metadata: Metadata = {
-  title: "Leonvdw.nl",
-  description: "Leon's personal portfolio site",
+  title: "Yanickverburg.nl",
+  description: "Yanick's personal portfolio site",
 };
 
 const gotham = localfont({

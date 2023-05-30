@@ -16,7 +16,7 @@
   --background: #13005A;
   --track: #1C82AD;
   --thumb: #13005A;
-  --logo: #2ead83;
+  --logo: hsl(204, 76%, 69%);
   --text: #ffffff;
   --trans: hsla(305, 44%, 66%, 0.3);
 }
@@ -34,7 +34,7 @@
   --background: #13005A;
   --track: #1C82AD;
   --thumb: #13005A;
-  --logo: #2ead83;
+  --logo: hsl(204, 76%, 69%);
   --text: #ffffff;
   --trans: hsla(305, 44%, 66%, 0.3);
 }

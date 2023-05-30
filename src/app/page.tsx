@@ -14,7 +14,7 @@ import Skills from "@/components/gridcomponents/skills";
 import Flyn from "@/components/gridcomponents/flynImg";
 import Footer from "@/components/footer";
 import GithubStats from "@/components/gridcomponents/stats/ghStats";
-// import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
+import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
 import AnimatedLayout from "@/layouts/animatedLayout";
 import { type Metadata } from "next";
 // import { Maps } from "@/components/gridcomponents/maps/maps";
@@ -82,7 +82,8 @@ export default async function Home() {
 
           <Mail />
           <div className="hidden overflow-hidden rounded-[2rem] bg-br  sm:block xl:order-12">
-            {/* <WakatimeStats /> */}
+            {/* @ts-expect-error */}
+            <WakatimeStats />
           </div>
         </div>
         <Footer />

@@ -3,8 +3,11 @@ import { SiWakatime } from "react-icons/si";
 export default async function WakatimeStats() {
   const wakatimeKey = process.env.WAKATIME_KEY;
 
+  const date = new Date();
+  const formattedDate = date.toISOString().slice(0, 10);
+
   const { workingOn, minutesDifference } = await fetch(
-    `https://wakatime.com/api/v1/users/current/heartbeats?date=2023-05-19&api_key=${wakatimeKey}`,
+    `https://wakatime.com/api/v1/users/current/heartbeats?date=${formattedDate}&api_key=${wakatimeKey}`,
     {
       next: {
         revalidate: 600,
@@ -17,6 +20,7 @@ export default async function WakatimeStats() {
       const lastItem = data.data.slice(-1)[0];
       // get the project name
       const workingOn = lastItem.project;
+
       // get the last update
       const minutesDifference = Math.floor(
         (new Date().getTime() - new Date(lastItem.time * 1000).getTime()) /
