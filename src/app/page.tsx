@@ -18,7 +18,7 @@ import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
 import AnimatedLayout from "@/layouts/animatedLayout";
 import { type Metadata } from "next";
 // import { Maps } from "@/components/gridcomponents/maps/maps";
-// import Mapbox from "@/components/gridcomponents/mapbox2";
+// import Mapbox from "@/components/gridcomponents/mapbox";
 import { Suspense } from "react";
 import { SiGooglemaps } from "react-icons/si";
 // import MapsData from "@/components/gridcomponents/maps/mapsData";
@@ -27,13 +27,6 @@ export const metadata: Metadata = {
   title: "Home",
   description: "Welcome to yanickverburg.nl!",
 };
-
-// loading component
-const MapsLoading = () => (
-  <div className="flex flex-col overflow-hidden rounded-[2rem] bg-card p-8 sm:order-5 xl:order-8">
-    <SiGooglemaps className="text-6xl text-primary" />
-  </div>
-);
 
 export default async function Home() {
   // const data = await MapsData();
@@ -49,7 +42,9 @@ export default async function Home() {
             <About />
           </div>
           <div className=" overflow-hidden rounded-[2rem] bg-card  sm:order-6 xl:order-2">
-            <Suspense fallback={<MapsLoading />}>{/* <Maps /> */}</Suspense>
+            <Suspense fallback={<div className="bg-card" />}>
+              {/* <Mapbox /> */}
+            </Suspense>
           </div>
           <div className="rounded-[2rem] bg-br sm:hidden xl:order-3">
             <Janskapsalonsmall />
