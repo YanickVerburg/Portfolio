@@ -16,7 +16,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import clsx from "clsx";
 
 export default function Mapbox() {
-  let coords = {
+  const coords = {
     longitude: 51.92735,
     latitude: 5.5735,
   };
