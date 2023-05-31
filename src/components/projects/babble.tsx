@@ -5,13 +5,16 @@ import { ImArrowUpRight2 } from "react-icons/im";
 export default function Babble() {
   return (
     <div className=" flex h-full w-full items-center justify-center overflow-hidden">
-      <Image
-        src="/images/companies/babble.webp"
-        alt="Babble"
-        height={90}
-        width={90}
-        className="rounded-3xl"
-      />
+      <div className="translate-y-[40px]">
+        <Image
+          src="/images/babbleFlat.webp"
+          alt="Babble"
+          width={3292}
+          height={2002}
+          loading="lazy"
+          className="rounded-3xl"
+        />
+      </div>
       <div className="absolute bottom-2 left-4 m-2 box-border flex h-12 w-8 items-center justify-center transition-all duration-500 group-hover:w-[97px] ">
         <div className="rounded-full border-transparent transition-all duration-300 hover:border-4 hover:border-white/20">
           <div className="flex h-8 w-8 items-center justify-end gap-4 overflow-hidden rounded-full bg-dw p-2 text-text transition-all duration-500 group-hover:w-[97px] hover:w-[97px] ">

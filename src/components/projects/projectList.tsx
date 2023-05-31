@@ -1,5 +1,4 @@
 import {
-  SiDocker,
   SiGoogleplay,
   SiReact,
   SiExpo,
@@ -173,7 +172,7 @@ const projectList: ProjectList[] = [
     projectImageLight: "/images/companies/cap.webp",
     url: "https://www.youtube.com/watch?v=OnScnacuOww",
     translate: "translate-y-0 ",
-    width: "w-[120px]",
+    width: "w-[130px]",
     grid: "col-span-2 row-span-1",
     order: "order-2",
     description:

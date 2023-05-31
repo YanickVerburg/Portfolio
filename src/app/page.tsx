@@ -2,8 +2,6 @@
 import Head from "next/head";
 import About from "@/components/about";
 import Toggle from "@/components/gridcomponents/toggle";
-import Janskapsalonsmall from "@/components/gridcomponents/janskapsalonsmall";
-import Janskapsalonflat from "@/components/gridcomponents/janskapsalonflat";
 import {
   Github,
   Whatsapp,
@@ -18,9 +16,11 @@ import WakatimeStats from "@/components/gridcomponents/stats/wtStats";
 import AnimatedLayout from "@/layouts/animatedLayout";
 import { type Metadata } from "next";
 // import { Maps } from "@/components/gridcomponents/maps/maps";
-// import Mapbox from "@/components/gridcomponents/mapbox";
+import Mapbox from "@/components/gridcomponents/mapbox";
 import { Suspense } from "react";
-import { SiGooglemaps } from "react-icons/si";
+import Babbleflat from "@/components/gridcomponents/babbleflat";
+import BabbleSmall from "@/components/projects/babbleSmall";
+// import { SiGooglemaps } from "react-icons/si";
 // import MapsData from "@/components/gridcomponents/maps/mapsData";
 
 export const metadata: Metadata = {
@@ -43,13 +43,13 @@ export default async function Home() {
           </div>
           <div className=" overflow-hidden rounded-[2rem] bg-card  sm:order-6 xl:order-2">
             <Suspense fallback={<div className="bg-card" />}>
-              {/* <Mapbox /> */}
+              <Mapbox />
             </Suspense>
           </div>
           <div className="rounded-[2rem] bg-br sm:hidden xl:order-3">
-            <Janskapsalonsmall />
+            <BabbleSmall />
           </div>
-          <div className="overflow-hidden rounded-[2rem] bg-pg sm:order-3  xl:order-4">
+          <div className="overflow-hidden rounded-[2rem] bg-pg sm:order-3 xl:order-4">
             <Toggle />
           </div>
 
@@ -72,7 +72,7 @@ export default async function Home() {
             <Flyn />
           </div>
           <div className="hidden overflow-hidden rounded-[2rem] bg-br sm:order-4 sm:col-span-2 sm:block xl:order-10">
-            <Janskapsalonflat />
+            <Babbleflat />
           </div>
 
           <Mail />

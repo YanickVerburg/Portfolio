@@ -2,12 +2,12 @@ import FlynImg from "@/components/gridcomponents/flynImg";
 import Janskapsalonflat from "@/components/gridcomponents/janskapsalonflat";
 import About from "@/components/about";
 import AnimatedLayout from "@/layouts/animatedLayout";
-import Portfolio from "@/components/projects/portfolio";
 import Janskapsalonsmall from "@/components/gridcomponents/janskapsalonsmall";
-import PortfolioSmall from "@/components/projects/portfolioSmall";
 import { type Metadata } from "next";
 import Babble from "@/components/projects/babble";
 import Capgemini from "@/components/projects/capgemini";
+import CapgeminiSmall from "@/components/projects/capgeminiSmall";
+import BabbleSmall from "@/components/projects/babbleSmall";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -33,20 +33,15 @@ export default function Projects() {
               <Janskapsalonsmall />
             </div>
             <div className="group relative order-4 hidden overflow-hidden rounded-[2rem] bg-br sm:order-3 sm:col-span-2 sm:block">
-              <Portfolio />
-            </div>
-            <div className="group relative order-2 overflow-hidden rounded-[2rem] bg-br sm:hidden">
-              <PortfolioSmall />
-            </div>
-            <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br">
               <Babble />
             </div>
+            <div className="group relative order-2 overflow-hidden rounded-[2rem] bg-br sm:hidden">
+              <BabbleSmall />
+            </div>
             <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br">
-              <Capgemini />
+              <CapgeminiSmall />
             </div>
-            <div className="group relative order-5 overflow-hidden rounded-[2rem] bg-br sm:col-span-3 sm:block">
-              <div />
-            </div>
+            {/* TO DO: WijWetenHetWel */}
           </div>
         </div>
       </div>

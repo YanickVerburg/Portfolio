@@ -17,8 +17,8 @@ import clsx from "clsx";
 
 export default function Mapbox() {
   const coords = {
-    longitude: 51.92735,
-    latitude: 5.5735,
+    longitude: 4.65086,
+    latitude: 52.117882,
   };
 
   const [awake, setAwake] = useState(false);
